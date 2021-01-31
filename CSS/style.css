@@ -365,6 +365,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 35px;
 }
 
 .contact-title::before {
@@ -428,6 +429,11 @@
 .label-mess {
     height: 140px;
 }
+textarea::placeholder,
+input::placeholder {
+    color: var(--color11);
+    font-style: var(--font1);
+}
 
 .checkbox-container {
     display: flex;
@@ -438,7 +444,42 @@
 }
 
 .checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-text {
+    cursor: pointer;
+}
+
+.checkbox-span {
+    width: 22px;
+    height: 22px;
+    border-radius: 8px;
+    background-color: var(--color1);
+    border: 1px solid var(--color12);
+    display: inline-block;
+    outline: none;
+    position: relative;
     margin-right: 10px;
+}
+
+.checkbox:checked + .checkbox-span::after {
+    content: "";
+    width: 12px;
+    height: 9px;
+    position: absolute;
+    background-image: url("../images/Icon Check.svg");
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox-text-container {
+    max-width: calc(100% - 32px);
 }
 
 .form-button {
@@ -449,4 +490,77 @@
     background: var(--color1);
     box-shadow: 0px 3px 6px var(--color7);
     border: 1px solid var(--color5);
+}
+
+.form-button:hover {
+    background: var(--color5);
+    color: var(--color1);
+}
+
+/***********************FOOTER***********************/
+
+.page-footer {
+    width: 100%;
+    height: 232px;
+    background: var(--color10);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    color: var(--color1);
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 800;
+    font-family: var(--font1);
+    padding-top: 40px;
+    padding-bottom: 22px;
+}
+
+.footer-logo-img {
+    margin-right: 7px;
+}
+
+.footer-logo-title1 {
+    margin-right: 8px;
+    color: var(--color5);
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.footer__nav__list__li__a {
+    text-decoration: none;
+    color: var(--color1);
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+    font-family: var(--font1);
+}
+
+.footer__nav__list__li__a:hover {
+    color: var(--color5);
+}
+
+.footer__nav__list__li {
+    padding-bottom: 7px;
+}
+
+.footer-nav-list-container1 {
+    padding-right: 141px;
+}
+
+.footer-nav-list-container2 {
+    flex-grow: 1;
+}
+
+.page-footer-copyright {
+    color: var(--color12);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    align-self: flex-end;
+    font-family: var(--font1);
 }
