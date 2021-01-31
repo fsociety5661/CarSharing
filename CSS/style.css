@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1088px;
+}
+
+:root {
+    --color1: #FFFFFF;
+    --color2: #000000;
+    --color3: #00000066;
+    --color4: #FFFFFF33;
+    --color5: #FF0000;
+    --color6: #00000040;
+    --color7: #FF00004D;
+    --color8: #FFFFFF29;
+    --color9: #6A6A6A;
+    --color10: #28272C;
+    --color11: #B2B2B2;
+    --color12: #D1D1D1;
+    --font1: "Nunito Sans";
+    --font2: "Open Sans";
+}
