@@ -293,7 +293,6 @@
 
 .service-title {
     padding-top: 60px;
-    margin-bottom: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -357,4 +356,97 @@
     font-family: var(--font2);
     margin-bottom: 26px;
     text-align: center;
+}
+
+/***********************CONTACT***********************/
+
+.contact-title {
+    padding-top: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-title::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: var(--color5);
+}
+
+.contact-title::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: var(--color5);
+}
+
+.contact-title1 {
+    color: var(--color2);
+    font-size: 35px;
+    line-height: 47px;
+    font-weight: bold;
+    font-family: var(--font1);
+    padding: 0 10px;
+}
+
+.contact__container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 65px;
+}
+
+.contact-photo {
+    width: 444px;
+    margin-right: 16px;
+}
+
+.contact-photo-img {
+    width: 100%;
+}
+
+.contact-form {
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label-text {
+    padding: 8px 0 8px 12px;
+    border: 1px solid var(--color12);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-family: var(--font1);
+    width: 444px;
+}
+
+.label-text:focus {
+    box-shadow: 0px 1px 6px var(--color7);
+    border: 1px solid var(--color5);
+}
+
+.label-mess {
+    height: 140px;
+}
+
+.checkbox-container {
+    display: flex;
+    color: var(--color11);
+    font-family: var(--font1);
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.form-button {
+    align-self: flex-end;
+    margin-top: 31px;
+    padding: 10px 52px;
+    color: var(--color5);
+    background: var(--color1);
+    box-shadow: 0px 3px 6px var(--color7);
+    border: 1px solid var(--color5);
 }
